@@ -13,7 +13,7 @@ import { ToggleTodoAction, EditTodoAction, RemoveTodoAction } from '../todo.acti
 export class TodoItemComponent implements OnInit {
 
   @Input() todo: Todo;
-  @ViewChild('txtInputFisico') txtInputFisico: ElementRef;
+  @ViewChild('txtInputFisico', {static:false}) txtInputFisico: ElementRef;
 
   chField: FormControl;
   txtField: FormControl;
